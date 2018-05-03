@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashbaordComponent } from './dashbaord/dashbaord.component';
 import { CustomerComponent } from './customer/customer.component';
+import { AdminModule } from './admin/admin.module';
+import { MaterialModule } from './shared/material/material.module';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { CustomerComponent } from './customer/customer.component';
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
+    AdminModule,
     AppRoutingModule
   ],
   providers: [],
